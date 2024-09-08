@@ -1,8 +1,8 @@
 ---
-title: "About"
+title: "Sobre"
 ---
 
-About this site
+Sobre este site
 
 ```{r}
 1 + 1
