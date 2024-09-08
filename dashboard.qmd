@@ -310,8 +310,8 @@ QV_rate <- df_annual_rates %>%
 
 
 
-## Row {height="20%"}
-Taxas de variação média anual (2010 - último ano disponível)
+## Taxas de variação média anual (2010 - último ano disponível) {height="20%"}
+
 ```{r}
 #| content: valuebox
 #| title: "IBE"
