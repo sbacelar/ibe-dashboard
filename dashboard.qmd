@@ -104,13 +104,6 @@ df <- q1_3_long |>
   mutate(variable_label = paste(variable_code, variable_label, sep = ": "))
 ```
 
-#  {.sidebar}
-
-<!-- [English version](dashboard_ibe_en.html) -->
-
-
-# Global
-
 ```{r}
 #| label: all-values
 #| results: hide
@@ -306,15 +299,51 @@ QV_rate <- df_annual_rates %>%
 #   p_preterm > params$us_preterm_rate + params$threshold_diff ~ "danger",
 #   .default = "light"
 #   )
+I05_rate <- df_annual_rates %>%
+  filter(Indicador == 'I05') %>%
+  pull(annual_mean_rate)
+
+I10_rate <- df_annual_rates %>%
+  filter(Indicador == 'I10') %>%
+  pull(annual_mean_rate)
+
+I19_rate <- df_annual_rates %>%
+  filter(Indicador == 'I19') %>%
+  pull(annual_mean_rate)
+
+I30_rate <- df_annual_rates %>%
+  filter(Indicador == 'I30') %>%
+  pull(annual_mean_rate)
+
+I46_rate <- df_annual_rates %>%
+  filter(Indicador == 'I46') %>%
+  pull(annual_mean_rate)
+
+I58_rate <- df_annual_rates %>%
+  filter(Indicador == 'I58') %>%
+  pull(annual_mean_rate)
+
 ```
 
+#  {.sidebar}
 
+<!-- [English version](dashboard_ibe_en.html) -->
 
-## Taxas de variação média anual (2010 - último ano disponível) {height="20%"}
+### Notas
+
+1. as caixas com valores apresentam a taxa média anual de variação entre 2010 e 
+o último anos disponível (2022 ou 2023) para os principais indicadores;
+2. as taxas de variação foram calculadas com base na seguinte fórmula: $$\left(\frac{X_{\text{final}}}{X_{\text{2010}}} \right)^{\frac{1}{n}} - 1$$
+onde $X_{\text{final}}$ é o valor mais recente, $X_{\text{2010}}$ é o valor 
+do indicador em 2010 e $n$ é o número de anos entre os dois valores;
+
+# Global
+
+## Row
 
 ```{r}
 #| content: valuebox
-#| title: "IBE"
+#| title: "IBE (2010-2022)"
 
 list(
   icon = "file-medical",
@@ -325,7 +354,7 @@ list(
 
 ```{r}
 #| content: valuebox
-#| title: "Condições materiais de vida"
+#| title: "Condições materiais de vida (2010-2022)"
 
 list(
   icon = "file-medical",
@@ -336,7 +365,7 @@ list(
 
 ```{r}
 #| content: valuebox
-#| title: "Qualidade de vida"
+#| title: "Qualidade de vida (2010-2022)"
 
 list(
   icon = "calendar-week",
@@ -345,7 +374,7 @@ list(
 )
 ```
 
-## Row {height="80%" .tabset}
+## Row {.tabset}
 
 
 ```{r}
@@ -379,11 +408,44 @@ plots$plot_raw
 
 # Condições materiais de vida
 
-## Row {height="10%"}
+## Row
 
-Valueboxes 2
 
-## Row {height="90%" .tabset}
+```{r}
+#| content: valuebox
+#| title: "Desp. consumo fam. (2010-2022)"
+
+list(
+  icon = "file-medical",
+  color = "primary",
+  value = paste0(I05_rate, "%")
+)
+```
+
+```{r}
+#| content: valuebox
+#| title: "Taxa risco pobreza (2010-2022)"
+
+list(
+  icon = "file-medical",
+  color = "warning",
+  value = paste0(I10_rate, "%")
+)
+```
+
+```{r}
+#| content: valuebox
+#| title: "Taxa desemprego (2010-2022)"
+
+list(
+  icon = "calendar-week",
+  color = "danger",
+  value = paste0(I19_rate, "%")
+)
+```
+
+
+## Row {.tabset}
 
 
 ```{r}
@@ -420,11 +482,43 @@ plots$plot_raw
 
 # Qualidade de vida
 
-## Row {height="10%"}
+## Row
 
-Valueboxes 3
+```{r}
+#| content: valuebox
+#| title: "Esperança de vida à nascença (2010-2022)"
 
-## Row {height="90%" .tabset}
+list(
+  icon = "file-medical",
+  color = "primary",
+  value = paste0(I30_rate, "%")
+)
+```
+
+```{r}
+#| content: valuebox
+#| title: "Prop. (30-34) com ensino superior (2010-2022)"
+
+list(
+  icon = "file-medical",
+  color = "warning",
+  value = paste0(I46_rate, "%")
+)
+```
+
+```{r}
+#| content: valuebox
+#| title: "Grau satisf. vida geral (2010-2022)"
+
+list(
+  icon = "calendar-week",
+  color = "danger",
+  value = paste0(I58_rate, "%")
+)
+```
+
+
+## Row {.tabset}
 
 
 ```{r}
