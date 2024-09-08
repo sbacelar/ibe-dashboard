@@ -311,11 +311,10 @@ QV_rate <- df_annual_rates %>%
 
 
 ## Row {height="20%"}
-
+Taxas de variação média anual (2010 - último ano disponível)
 ```{r}
 #| content: valuebox
-#| title: "IBE - Tx. variação média anual (2010 - 2022)"
-#| caption: "Source: INE"
+#| title: "IBE"
 
 list(
   icon = "file-medical",
@@ -326,7 +325,7 @@ list(
 
 ```{r}
 #| content: valuebox
-#| title: "Condições materiais de vida (2010 - 2022)"
+#| title: "Condições materiais de vida"
 
 list(
   icon = "file-medical",
@@ -337,7 +336,7 @@ list(
 
 ```{r}
 #| content: valuebox
-#| title: "QV (2010 - 2022)"
+#| title: "Qualidade de vida"
 
 list(
   icon = "calendar-week",
