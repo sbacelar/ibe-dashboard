@@ -315,6 +315,7 @@ QV_rate <- df_annual_rates %>%
 ```{r}
 #| content: valuebox
 #| title: "IBE - Tx. variação média anual (2010 - 2022)"
+#| caption: "Source: INE"
 
 list(
   icon = "file-medical",
