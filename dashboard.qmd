@@ -329,7 +329,7 @@ list(
 
 list(
   icon = "file-medical",
-  color = "primary",
+  color = "warning",
   value = paste0(CMV_rate, "%")
 )
 ```
@@ -340,7 +340,7 @@ list(
 
 list(
   icon = "calendar-week",
-  color = "primary",
+  color = "danger",
   value = paste0(QV_rate, "%")
 )
 ```
