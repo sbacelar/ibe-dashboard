@@ -13,7 +13,7 @@ format:
 #   chunk_output_type: console
 ---
 
-```{r}
+```{r, load-packages}
 #| label: load-packages
 #| message: false
 
@@ -25,7 +25,7 @@ theme_set(theme_minimal(base_size = 24, base_family = "Atkinson Hyperlegible"))
 ```
 
 
-```{r}
+```{r, load-data}
 #| label: load-data
 #| message: false
 
@@ -91,7 +91,7 @@ df_annual_rates <- calc_annual_mean_rates(q1_3)
 ```
 
 
-```{r}
+```{r, prep-data}}
 #| label: prep-data
 
 df <- q1_3_long |>
@@ -104,7 +104,7 @@ df <- q1_3_long |>
   mutate(variable_label = paste(variable_code, variable_label, sep = ": "))
 ```
 
-```{r}
+```{r, plot-functions}
 #| label: all-values
 #| results: hide
 
@@ -272,7 +272,7 @@ plot_for_group <- function(data, group_column, group_value) {
 ```
 
 
-```{r}
+```{r, rates}
 #| label: rates
 #| results: hide
 
@@ -284,12 +284,6 @@ CMV_rate <- df_annual_rates %>%
   filter(Indicador == 'P1') %>%
   pull(annual_mean_rate)
 
-# p_cesarean_color <- case_when(
-#   between(p_cesarean, params$us_cesarean_rate, params$us_cesarean_rate + params$threshold_diff) ~ "warning",
-#   p_cesarean > params$us_cesarean_rate + params$threshold_diff ~ "danger",
-#   .default = "light"
-#   )
-
 QV_rate <- df_annual_rates %>%
   filter(Indicador == 'P2') %>%
   pull(annual_mean_rate)
@@ -300,28 +294,49 @@ QV_rate <- df_annual_rates %>%
 #   .default = "light"
 #   )
 I05_rate <- df_annual_rates %>%
-  filter(Indicador == 'I05') %>%
+  filter(Indicador == 'i05') %>%
   pull(annual_mean_rate)
 
 I10_rate <- df_annual_rates %>%
-  filter(Indicador == 'I10') %>%
+  filter(Indicador == 'i10') %>%
   pull(annual_mean_rate)
 
 I19_rate <- df_annual_rates %>%
-  filter(Indicador == 'I19') %>%
+  filter(Indicador == 'i19') %>%
   pull(annual_mean_rate)
 
 I30_rate <- df_annual_rates %>%
-  filter(Indicador == 'I30') %>%
+  filter(Indicador == 'i30') %>%
   pull(annual_mean_rate)
 
 I46_rate <- df_annual_rates %>%
-  filter(Indicador == 'I46') %>%
+  filter(Indicador == 'i46') %>%
   pull(annual_mean_rate)
 
 I58_rate <- df_annual_rates %>%
-  filter(Indicador == 'I58') %>%
+  filter(Indicador == 'i58') %>%
   pull(annual_mean_rate)
+
+
+value_box_color <- function(rate) {
+  case_when(
+    between(rate, -4, 4) ~ "warning",
+    rate < -4  ~ "danger",
+    .default = "light"
+  )
+}
+
+
+
+IBE_rate_color <- value_box_color(IBE_rate)
+CMV_rate_color <- value_box_color(CMV_rate)
+QV_rate_color <- value_box_color(QV_rate)
+I05_rate_color <- value_box_color(I05_rate)
+I10_rate_color <- value_box_color(I10_rate)
+I19_rate_color <- value_box_color(I19_rate)
+I30_rate_color <- value_box_color(I30_rate)
+I46_rate_color <- value_box_color(I46_rate)
+I58_rate_color <- value_box_color(I58_rate)
 
 ```
 
@@ -331,45 +346,49 @@ I58_rate <- df_annual_rates %>%
 
 ### Notas
 
-1. as caixas com valores apresentam a taxa média anual de variação entre 2010 e 
+1. as caixas com valores apresentam a taxa de variação média anual entre 2010 e 
 o último anos disponível (2022 ou 2023) para os principais indicadores;
 2. as taxas de variação foram calculadas com base na seguinte fórmula: $$\left(\frac{X_{\text{final}}}{X_{\text{2010}}} \right)^{\frac{1}{n}} - 1$$
 onde $X_{\text{final}}$ é o valor mais recente, $X_{\text{2010}}$ é o valor 
 do indicador em 2010 e $n$ é o número de anos entre os dois valores;
+3. A cor das caixas depende do valor da taxa de variação média anual:
+    - verde: taxa de variação média anual entre -4% e 4%;
+    - amarelo: taxa de variação média anual entre -4% e -4%;
+    - vermelho: taxa de variação média anual inferior a -4%.
 
 # Global
 
 ## Row
 
-```{r}
+```{r, valuebox_IBE}
 #| content: valuebox
 #| title: "IBE (2010-2022)"
 
 list(
   icon = "file-medical",
-  color = "primary",
+  color = IBE_rate_color,
   value = paste0(IBE_rate, "%")
 )
 ```
 
-```{r}
+```{r, valuebox_CMV}
 #| content: valuebox
 #| title: "Condições materiais de vida (2010-2022)"
 
 list(
   icon = "file-medical",
-  color = "warning",
+  color = CMV_rate_color,
   value = paste0(CMV_rate, "%")
 )
 ```
 
-```{r}
+```{r, valuebox_QV}
 #| content: valuebox
 #| title: "Qualidade de vida (2010-2022)"
 
 list(
   icon = "calendar-week",
-  color = "danger",
+  color = QV_rate_color,
   value = paste0(QV_rate, "%")
 )
 ```
@@ -377,7 +396,7 @@ list(
 ## Row {.tabset}
 
 
-```{r}
+```{r, plot_IBE}
 #| title: Índice de Bem-estar - global e por perspetiva
 
 plots <- plot_for_group(df, group_column = "parent", group_value = "IBE")
@@ -386,7 +405,7 @@ plots <- plot_for_group(df, group_column = "parent", group_value = "IBE")
 plots$plot_raw
 ```
 
-```{r}
+```{r, plot_CMV}}
 #| title: Condições materiais de vida e respetivos domínios
 
 #|
@@ -396,7 +415,7 @@ plots <- plot_for_group(df, group_column = "parent", group_value = "P1")
 plots$plot_raw
 ```
 
-```{r}
+```{r, plot_QV}}
 #| title: Qualidade de vida e respetivos domínios
 
 #|
@@ -411,35 +430,35 @@ plots$plot_raw
 ## Row
 
 
-```{r}
+```{r, valuebox_I05}
 #| content: valuebox
 #| title: "Desp. consumo fam. (2010-2022)"
 
 list(
   icon = "file-medical",
-  color = "primary",
+  color = I05_rate_color,
   value = paste0(I05_rate, "%")
 )
 ```
 
-```{r}
+```{r, valuebox_I10}
 #| content: valuebox
 #| title: "Taxa risco pobreza (2010-2022)"
 
 list(
   icon = "file-medical",
-  color = "warning",
+  color = I10_rate_color,
   value = paste0(I10_rate, "%")
 )
 ```
 
-```{r}
+```{r, valuebox_I19}
 #| content: valuebox
 #| title: "Taxa desemprego (2010-2022)"
 
 list(
   icon = "calendar-week",
-  color = "danger",
+  color = I19_rate_color,
   value = paste0(I19_rate, "%")
 )
 ```
@@ -448,7 +467,7 @@ list(
 ## Row {.tabset}
 
 
-```{r}
+```{r, plot_D01}}
 #| title: Bem-estar económico
 
 
@@ -460,7 +479,7 @@ plots$plot_raw
 ```
 
 
-```{r}
+```{r, plot_D02}
 #| title: Vulnerabilidade económica
 
 plots <- plot_for_group(df, group_column = "parent", group_value = "D02")
@@ -470,7 +489,7 @@ plots$plot_raw
 #plots$plot_smoothed
 ```
 
-```{r}
+```{r, plot_D03}
 #| title: Emprego
 
 plots <- plot_for_group(df, group_column = "parent", group_value = "D03")
@@ -484,35 +503,35 @@ plots$plot_raw
 
 ## Row
 
-```{r}
+```{r, valuebox_I30}
 #| content: valuebox
 #| title: "Esperança de vida à nascença (2010-2022)"
 
 list(
   icon = "file-medical",
-  color = "primary",
+  color = I30_rate_color,
   value = paste0(I30_rate, "%")
 )
 ```
 
-```{r}
+```{r, valuebox_I46}
 #| content: valuebox
 #| title: "Prop. (30-34) com ensino superior (2010-2022)"
 
 list(
   icon = "file-medical",
-  color = "warning",
+  color = I46_rate_color,
   value = paste0(I46_rate, "%")
 )
 ```
 
-```{r}
+```{r, valuebox_I58}
 #| content: valuebox
 #| title: "Grau satisf. vida geral (2010-2022)"
 
 list(
   icon = "calendar-week",
-  color = "danger",
+  color = I58_rate_color,
   value = paste0(I58_rate, "%")
 )
 ```
@@ -521,7 +540,7 @@ list(
 ## Row {.tabset}
 
 
-```{r}
+```{r, plot_D04}
 #| title: Saúde
 
 
@@ -533,7 +552,7 @@ plots$plot_raw
 ```
 
 
-```{r}
+```{r, plot_D05}}
 #| title: Balanço vida-trabalho
 
 plots <- plot_for_group(df, group_column = "parent", group_value = "D05")
@@ -543,7 +562,7 @@ plots$plot_raw
 #plots$plot_smoothed
 ```
 
-```{r}
+```{r, plot_D06}
 #| title: Educação, conhecimento e competências
 
 plots <- plot_for_group(df, group_column = "parent", group_value = "D06")
@@ -554,7 +573,7 @@ plots$plot_raw
 ```
 
 
-```{r}
+```{r, plot_D07}}
 #| title: Relações sociais e bem-estar subjetivo
 
 
@@ -566,7 +585,7 @@ plots$plot_raw
 ```
 
 
-```{r}
+```{r, plot_D08}
 #| title: Participação cívica e governação
 
 plots <- plot_for_group(df, group_column = "parent", group_value = "D08")
@@ -576,7 +595,7 @@ plots$plot_raw
 #plots$plot_smoothed
 ```
 
-```{r}
+```{r, plot_D09}
 #| title: Segurança pessoal
 
 plots <- plot_for_group(df, group_column = "parent", group_value = "D09")
@@ -598,7 +617,7 @@ plots$plot_raw
 
 # Dados
 
-```{r}
+```{r, Dados}
 #| title: Dados
 
 df <- q1_3 |>
