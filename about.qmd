@@ -2,8 +2,5 @@
 title: "Sobre"
 ---
 
-Sobre este site
-
-```{r}
-1 + 1
-```
+Este site foi criado com base no Quarto para R, para apresentação de um
+dashboard dos dados já publicados do IBE de 2023, no 1/2 hoRa em Setembro de 2024.
