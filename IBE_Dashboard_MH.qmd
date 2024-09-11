@@ -1,0 +1,55 @@
+---
+title: "IBE - dashboard"
+subtitle: "1/2 hoRa"
+date: "2021-10-18"
+author: "Sérgio Bacelar"
+format: 
+  revealjs:
+    theme: beige
+editor: visual
+---
+
+## Origens: o problema dos gráficos *spaghetti* {.smaller}
+
+-   No início era o caos. Algumas soluções abaixo
+-   Solução adotada: `plotly`
+-   Um desvio obsessivo: colocar "tudo" numa única função
+
+::: columns
+::: {.column width="50%"}
+1.  Highlighting Key Lines
+2.  Small Multiples
+3.  Faceted Charts
+4.  Smoothing or Aggregating
+5.  Interactive Charts
+:::
+
+::: {.column width="50%"}
+6.  Jittering
+7.  Color and Opacity Adjustments
+8.  Summary Statistics
+9.  Use of Symbols
+10. Layering and Ordering
+:::
+:::
+
+## Abreviaturas das designações dos indicadores estatísticos
+
+-   Para melhorar a leitura das legendas dos gráficos;
+-   Como abreviar a seguinte designação de um indicador estatístico:
+    -   "Proporção da população desempregada inscrita num Centro de Emprego do IEFP que não recebe nenhum tipo de subsídio relacionado com o desemprego"
+
+## Versão bilingue
+
+-   Utilização de `profiles` (ver [https://marioangst.com/en/blog/posts/multi-language-quarto/]());
+-   Utilização da library `babelquarto` [https://docs.ropensci.org/babelquarto/]()
+-   Solução adotada: !DRY
+
+## Agradecimentos
+
+-   Mine Cetinkaya-Rudel, [https://github.com/mine-cetinkaya-rundel/ld-dashboard/blob/main/dashboard.qmd]()
+-   Melissa Van Bussel, [https://www.youtube.com/watch?v=5zYrgRylkH0&list=PLSjaBj3ul8GrS0uCKso0PuNeb4PQY-WWc&index=6&ab_channel=MelissaVanBussel%28ggnot2%29]()
+
+## Fiasco: a utilização da library `shiny`
+
+-   Suavizar os gráficos (*loess smoothing*);

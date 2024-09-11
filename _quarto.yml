@@ -12,6 +12,8 @@ website:
         text: About
       - href: dashboard.qmd
         text: Dashboard
+      - href: IBE_Dashboard_MH.qmd
+        text: Apresentação (MH)
 format:
   html:
     theme: [sandstone, custom.scss]
