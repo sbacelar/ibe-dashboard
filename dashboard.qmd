@@ -288,11 +288,6 @@ QV_rate <- df_annual_rates %>%
   filter(Indicador == 'P2') %>%
   pull(annual_mean_rate)
 
-# p_preterm_color <- case_when(
-#   between(p_preterm, params$us_preterm_rate, params$us_preterm_rate + params$threshold_diff) ~ "warning",
-#   p_preterm > params$us_preterm_rate + params$threshold_diff ~ "danger",
-#   .default = "light"
-#   )
 I05_rate <- df_annual_rates %>%
   filter(Indicador == 'i05') %>%
   pull(annual_mean_rate)
@@ -322,7 +317,7 @@ value_box_color <- function(rate) {
   case_when(
     between(rate, -4, 4) ~ "warning",
     rate < -4  ~ "danger",
-    .default = "light"
+    .default = "success"
   )
 }
 
@@ -352,7 +347,7 @@ o último anos disponível (2022 ou 2023) para os principais indicadores;
 onde $X_{\text{final}}$ é o valor mais recente, $X_{\text{2010}}$ é o valor 
 do indicador em 2010 e $n$ é o número de anos entre os dois valores;
 3. A cor das caixas depende do valor da taxa de variação média anual:
-    - verde: taxa de variação média anual entre -4% e 4%;
+    - verde: taxa de variação média anual superior a 4%;
     - amarelo: taxa de variação média anual entre -4% e -4%;
     - vermelho: taxa de variação média anual inferior a -4%.
 
