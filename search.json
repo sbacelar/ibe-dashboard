@@ -10,6 +10,56 @@
     ]
   },
   {
+    "objectID": "IBE_Dashboard_MH.html#origens-o-problema-dos-gráficos-spaghetti",
+    "href": "IBE_Dashboard_MH.html#origens-o-problema-dos-gráficos-spaghetti",
+    "title": "IBE - dashboard",
+    "section": "Origens: o problema dos gráficos spaghetti",
+    "text": "Origens: o problema dos gráficos spaghetti\n\nNo início era o caos. Algumas soluções abaixo\nSolução adotada: plotly\nUm desvio obsessivo: colocar “tudo” numa única função\n\n\n\n\nHighlighting Key Lines\nSmall Multiples\nFaceted Charts\nSmoothing or Aggregating\nInteractive Charts\n\n\n\nJittering\nColor and Opacity Adjustments\nSummary Statistics\nUse of Symbols\nLayering and Ordering",
+    "crumbs": [
+      "Apresentação (MH)"
+    ]
+  },
+  {
+    "objectID": "IBE_Dashboard_MH.html#abreviaturas-das-designações-dos-indicadores-estatísticos",
+    "href": "IBE_Dashboard_MH.html#abreviaturas-das-designações-dos-indicadores-estatísticos",
+    "title": "IBE - dashboard",
+    "section": "Abreviaturas das designações dos indicadores estatísticos",
+    "text": "Abreviaturas das designações dos indicadores estatísticos\n\nPara melhorar a leitura das legendas dos gráficos;\nComo abreviar a seguinte designação de um indicador estatístico:\n\n“Proporção da população desempregada inscrita num Centro de Emprego do IEFP que não recebe nenhum tipo de subsídio relacionado com o desemprego”",
+    "crumbs": [
+      "Apresentação (MH)"
+    ]
+  },
+  {
+    "objectID": "IBE_Dashboard_MH.html#versão-bilingue",
+    "href": "IBE_Dashboard_MH.html#versão-bilingue",
+    "title": "IBE - dashboard",
+    "section": "Versão bilingue",
+    "text": "Versão bilingue\n\nUtilização de profiles (ver https://marioangst.com/en/blog/posts/multi-language-quarto/);\nUtilização da library babelquarto https://docs.ropensci.org/babelquarto/\nSolução adotada: !DRY",
+    "crumbs": [
+      "Apresentação (MH)"
+    ]
+  },
+  {
+    "objectID": "IBE_Dashboard_MH.html#agradecimentos",
+    "href": "IBE_Dashboard_MH.html#agradecimentos",
+    "title": "IBE - dashboard",
+    "section": "Agradecimentos",
+    "text": "Agradecimentos\n\nMine Cetinkaya-Rudel, https://github.com/mine-cetinkaya-rundel/ld-dashboard/blob/main/dashboard.qmd\nMelissa Van Bussel, https://www.youtube.com/watch?v=5zYrgRylkH0&list=PLSjaBj3ul8GrS0uCKso0PuNeb4PQY-WWc&index=6&ab_channel=MelissaVanBussel%28ggnot2%29",
+    "crumbs": [
+      "Apresentação (MH)"
+    ]
+  },
+  {
+    "objectID": "IBE_Dashboard_MH.html#fiasco-a-utilização-da-library-shiny",
+    "href": "IBE_Dashboard_MH.html#fiasco-a-utilização-da-library-shiny",
+    "title": "IBE - dashboard",
+    "section": "Fiasco: a utilização da library shiny",
+    "text": "Fiasco: a utilização da library shiny\n\nSuavizar os gráficos (loess smoothing);",
+    "crumbs": [
+      "Apresentação (MH)"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "ibe-dashboard",
