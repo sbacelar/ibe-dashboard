@@ -2,7 +2,7 @@
 title: "IBE 2023"
 format: 
   dashboard:
-    logo: images/ibe.png
+    logo: images/ibe-logo-svg.svg
 # theme: [cosmo, custom.scss]
 # fig-width: 10
 # fig-asp: 0.3
