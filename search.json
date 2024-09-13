@@ -14,7 +14,17 @@
     "href": "IBE_Dashboard_MH.html#origens-o-problema-dos-gráficos-spaghetti",
     "title": "IBE - dashboard",
     "section": "Origens: o problema dos gráficos spaghetti",
-    "text": "Origens: o problema dos gráficos spaghetti\n\nNo início era o caos. Algumas soluções abaixo\nSolução adotada: plotly\nUm desvio obsessivo: colocar “tudo” numa única função\n\n\n\n\nHighlighting Key Lines\nSmall Multiples\nFaceted Charts\nSmoothing or Aggregating\nInteractive Charts\n\n\n\nJittering\nColor and Opacity Adjustments\nSummary Statistics\nUse of Symbols\nLayering and Ordering",
+    "text": "Origens: o problema dos gráficos spaghetti\n\nNo início era o caos.\nDestaque do IBE (2023)",
+    "crumbs": [
+      "Apresentação (MH)"
+    ]
+  },
+  {
+    "objectID": "IBE_Dashboard_MH.html#algumas-soluções-para-o-problema-dos-gráficos-spaghetti",
+    "href": "IBE_Dashboard_MH.html#algumas-soluções-para-o-problema-dos-gráficos-spaghetti",
+    "title": "IBE - dashboard",
+    "section": "Algumas soluções para o problema dos gráficos spaghetti",
+    "text": "Algumas soluções para o problema dos gráficos spaghetti\n\nVárias soluções possíveis\nSolução adotada com base em gráficos interativos: plotly\nCódigo com um desvio obsessivo: colocar “tudo” numa única função\n\n\n\n\nHighlighting Key Lines\nSmall Multiples\nFaceted Charts\nSmoothing or Aggregating\nInteractive Charts\n\n\n\nJittering\nColor and Opacity Adjustments\nSummary Statistics\nUse of Symbols\nLayering and Ordering",
     "crumbs": [
       "Apresentação (MH)"
     ]
@@ -24,7 +34,17 @@
     "href": "IBE_Dashboard_MH.html#abreviaturas-das-designações-dos-indicadores-estatísticos",
     "title": "IBE - dashboard",
     "section": "Abreviaturas das designações dos indicadores estatísticos",
-    "text": "Abreviaturas das designações dos indicadores estatísticos\n\nPara melhorar a leitura das legendas dos gráficos;\nComo abreviar a seguinte designação de um indicador estatístico:\n\n“Proporção da população desempregada inscrita num Centro de Emprego do IEFP que não recebe nenhum tipo de subsídio relacionado com o desemprego”",
+    "text": "Abreviaturas das designações dos indicadores estatísticos\n\nPara melhorar a leitura das legendas dos gráficos;\nComo abreviar a seguinte designação de um indicador estatístico:\n\n“Proporção da população desempregada inscrita num Centro de Emprego do IEFP que não recebe nenhum tipo de subsídio relacionado com o desemprego”\n\nUtilização de LLM para gerar abreviaturas dos indicadores estatísticos",
+    "crumbs": [
+      "Apresentação (MH)"
+    ]
+  },
+  {
+    "objectID": "IBE_Dashboard_MH.html#claude-gerou-um-logotipo-para-o-dashboard",
+    "href": "IBE_Dashboard_MH.html#claude-gerou-um-logotipo-para-o-dashboard",
+    "title": "IBE - dashboard",
+    "section": "Claude gerou um logotipo para o dashboard",
+    "text": "Claude gerou um logotipo para o dashboard\nThis logo design features:\n\nThe letters “IBE” in a bold, sans-serif font (Arial).\nEach letter is in a different color:\n\nI: Blue (#4A90E2)\nB: Teal (#50E3C2)\nE: Orange (#F5A623)\n\nAbove each letter is a small, semi-transparent circle in the corresponding color, adding a subtle decorative element.\n\nThe design is simple and clean, which makes it versatile for various uses in the Well-being Index publication. The colors chosen are vibrant and can be associated with different aspects of well-being: - Blue: Often associated with trust, stability, and calmness - Teal: Can represent balance, refreshment, and mental clarity - Orange: Often linked to enthusiasm, creativity, and vitality",
     "crumbs": [
       "Apresentação (MH)"
     ]

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100">
+  <style>
+    .text { font-family: Arial, sans-serif; font-weight: bold; }
+    .i { fill: #4A90E2; }
+    .b { fill: #50E3C2; }
+    .e { fill: #F5A623; }
+  </style>
+  <text x="10" y="80" class="text i" font-size="80">I</text>
+  <text x="70" y="80" class="text b" font-size="80">B</text>
+  <text x="150" y="80" class="text e" font-size="80">E</text>
+  <circle cx="35" cy="20" r="15" fill="#4A90E2" opacity="0.3" />
+  <circle cx="115" cy="20" r="15" fill="#50E3C2" opacity="0.3" />
+  <circle cx="195" cy="20" r="15" fill="#F5A623" opacity="0.3" />
+</svg>
