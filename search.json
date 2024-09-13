@@ -1,12 +1,12 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Sobre",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ibe-dashboard",
     "section": "",
-    "text": "Este site foi criado com base no Quarto para R, para apresentação de um dashboard dos dados já publicados do IBE de 2023, no 1/2 hoRa em Setembro de 2024.",
+    "text": "Este website foi criado com Quarto.\nPara saber mais sobre os websites Quarto, visitar https://quarto.org/docs/websites.",
     "crumbs": [
-      "About"
+      "Home"
     ]
   },
   {
@@ -80,13 +80,13 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "ibe-dashboard",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Sobre",
     "section": "",
-    "text": "Este website foi criado com Quarto.\nPara saber mais sobre os websites Quarto, visitar https://quarto.org/docs/websites.",
+    "text": "Este site foi criado com base no Quarto para R, para apresentação de um dashboard dos dados já publicados do IBE de 2023, no 1/2 hoRa em Setembro de 2024.",
     "crumbs": [
-      "Home"
+      "About"
     ]
   }
 ]
