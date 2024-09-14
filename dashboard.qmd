@@ -23,6 +23,8 @@ theme_set(theme_minimal(base_size = 24, base_family = "Atkinson Hyperlegible"))
 
 load("data/q1_3.RData")
 load("data/q1_3_long.RData")
+q1_3_long <- q1_3_long |> select(-c(Name, Abbreviation))
+
 figs_titles <- read_delim("data/figuras_destaque_titulos_2.csv", 
                           delim = ";", escape_double = FALSE, col_types = cols(fig = col_character()), 
                           trim_ws = TRUE)
@@ -33,7 +35,7 @@ calc_annual_mean_rates <- function(d) {
   ## Assuming your data is loaded in a dataframe called df
   
   # Convert the numeric columns (with commas as decimal points) to numeric values
-  numeric_columns <- 7:ncol(df) # Assuming the first 6 columns are non-numeric
+  numeric_columns <- 9:ncol(df) # Assuming the first 6 columns are non-numeric
   df[, numeric_columns] <- lapply(df[, numeric_columns], function(x)
     as.numeric(gsub(",", ".", x)))
   
@@ -331,18 +333,17 @@ I58_rate_color <- value_box_color(I58_rate)
 
 [English version](dashboard_en.html)
 
-### Notes
+### Notas
 
-1. the boxes with values show the average annual rate of change between 2010 and 
-the latest available year (2022 or 2023) for the main indicators;
-2. the rates of change were calculated using the following formula: $$\left(\frac{X_{\text{final}}}{X_{\text{2010}}} \right)^{\frac{1}{n}} - 1$$
-where $X_{\text{final}}$ is the most recent value, $X_{\text{2010}}$ is the value 
-of the indicator in 2010 and $n$ is the number of years between the two values;
-3. The colour of the boxes depends on the value of the average annual rate of change:
-    - green: average annual rate of change greater than 4%;
-    - yellow: average annual rate of change between -4% and -4%;
-    - red: average annual rate of change of less than -4%.
-
+1. as caixas com valores apresentam a taxa de variação média anual entre 2010 e 
+o último anos disponível (2021 ou 2022) para os principais indicadores;
+2. as taxas de variação foram calculadas com base na seguinte fórmula: $$\left(\frac{X_{\text{final}}}{X_{\text{2010}}} \right)^{\frac{1}{n}} - 1$$
+onde $X_{\text{final}}$ é o valor mais recente, $X_{\text{2010}}$ é o valor 
+do indicador em 2010 e $n$ é o número de anos entre os dois valores;
+3. A cor das caixas depende do valor da taxa de variação média anual:
+    - verde: taxa de variação média anual superior a 4%;
+    - amarelo: taxa de variação média anual entre -4% e -4%;
+    - vermelho: taxa de variação média anual inferior a -4%.
 
 # Global
 
@@ -431,7 +432,7 @@ list(
 
 ```{r, valuebox_I10}
 #| content: valuebox
-#| title: "Taxa risco pobreza (2010-2022)"
+#| title: "Taxa risco pobreza (2010-2021)"
 
 list(
   icon = "file-medical",
@@ -515,7 +516,7 @@ list(
 
 ```{r, valuebox_I58}
 #| content: valuebox
-#| title: "Grau satisf. vida geral (2010-2022)"
+#| title: "Grau satisf. vida geral (2010-2021)"
 
 list(
   icon = "calendar-week",
@@ -609,7 +610,8 @@ plots$plot_raw
 #| title: Dados
 
 df <- q1_3 |>
-  select(-ord, -Abreviatura)
+  select(-ord, -Abreviatura, -Name, -Abbreviation) |>
+  rename(nível = level, pai = parent)
 
 datatable(df)
 

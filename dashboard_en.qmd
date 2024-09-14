@@ -3,14 +3,6 @@ title: "IBE 2023"
 format: 
   dashboard:
     logo: images/ibe-logo-svg.svg
-# theme: [cosmo, custom.scss]
-# fig-width: 10
-# fig-asp: 0.3
-# params:
-#   month: "September"
-#   year: "2023"
-# editor_options: 
-#   chunk_output_type: console
 ---
 
 ```{r, load-packages}
@@ -31,6 +23,8 @@ theme_set(theme_minimal(base_size = 24, base_family = "Atkinson Hyperlegible"))
 
 load("data/q1_3.RData")
 load("data/q1_3_long.RData")
+q1_3_long <- q1_3_long |> select(-c(Nome, Abreviatura))
+
 figs_titles <- read_delim("data/figuras_destaque_titulos_2.csv", 
                           delim = ";", escape_double = FALSE, col_types = cols(fig = col_character()), 
                           trim_ws = TRUE)
@@ -41,7 +35,7 @@ calc_annual_mean_rates <- function(d) {
   ## Assuming your data is loaded in a dataframe called df
   
   # Convert the numeric columns (with commas as decimal points) to numeric values
-  numeric_columns <- 7:ncol(df) # Assuming the first 6 columns are non-numeric
+  numeric_columns <- 9:ncol(df) # Assuming the first 6 columns are non-numeric
   df[, numeric_columns] <- lapply(df[, numeric_columns], function(x)
     as.numeric(gsub(",", ".", x)))
   
@@ -99,7 +93,7 @@ df <- q1_3_long |>
     year = Ano,
     value = Valor,
     variable_code = Indicador,
-    variable_label = Abreviatura
+    variable_label = Abbreviation
   ) |>
   mutate(variable_label = paste(variable_code, variable_label, sep = ": "))
 ```
@@ -214,7 +208,7 @@ plot_variables <- function(data,
   
   p <- p %>% layout(
     #title = plot_title,
-    xaxis = list(title = "Ano"),
+    xaxis = list(title = "Year"),
     yaxis = list(title = "No.")
   )
   
@@ -339,17 +333,17 @@ I58_rate_color <- value_box_color(I58_rate)
 
 [Versão em Português](dashboard.html)
 
-### Notas
+### Notes
 
-1. as caixas com valores apresentam a taxa de variação média anual entre 2010 e 
-o último anos disponível (2022 ou 2023) para os principais indicadores;
-2. as taxas de variação foram calculadas com base na seguinte fórmula: $$\left(\frac{X_{\text{final}}}{X_{\text{2010}}} \right)^{\frac{1}{n}} - 1$$
-onde $X_{\text{final}}$ é o valor mais recente, $X_{\text{2010}}$ é o valor 
-do indicador em 2010 e $n$ é o número de anos entre os dois valores;
-3. A cor das caixas depende do valor da taxa de variação média anual:
-    - verde: taxa de variação média anual superior a 4%;
-    - amarelo: taxa de variação média anual entre -4% e -4%;
-    - vermelho: taxa de variação média anual inferior a -4%.
+1. the boxes with values show the average annual rate of change between 2010 and 
+the latest available year (2021 or 2022) for the main indicators;
+2. the rates of change were calculated using the following formula: $$\left(\frac{X_{\text{final}}}{X_{\text{2010}}} \right)^{\frac{1}{n}} - 1$$
+where $X_{\text{final}}$ is the most recent value, $X_{\text{2010}}$ is the value 
+of the indicator in 2010 and $n$ is the number of years between the two values;
+3. The colour of the boxes depends on the value of the average annual rate of change:
+    - green: average annual rate of change greater than 4%;
+    - yellow: average annual rate of change between -4% and -4%;
+    - red: average annual rate of change of less than -4%.
 
 # Global
 
@@ -357,7 +351,7 @@ do indicador em 2010 e $n$ é o número de anos entre os dois valores;
 
 ```{r, valuebox_IBE}
 #| content: valuebox
-#| title: "IBE (2010-2022)"
+#| title: "WBI (2010-2022)"
 
 list(
   icon = "file-medical",
@@ -368,7 +362,7 @@ list(
 
 ```{r, valuebox_CMV}
 #| content: valuebox
-#| title: "Condições materiais de vida (2010-2022)"
+#| title: "Material living conditions (2010-2022)"
 
 list(
   icon = "file-medical",
@@ -379,7 +373,7 @@ list(
 
 ```{r, valuebox_QV}
 #| content: valuebox
-#| title: "Qualidade de vida (2010-2022)"
+#| title: "Quality of life (2010-2022)"
 
 list(
   icon = "calendar-week",
@@ -392,7 +386,7 @@ list(
 
 
 ```{r, plot_IBE}
-#| title: Índice de Bem-estar - global e por perspetiva
+#| title: "Well-being index (WBI): global and by perspective"
 
 plots <- plot_for_group(df, group_column = "parent", group_value = "IBE")
 
@@ -401,7 +395,7 @@ plots$plot_raw
 ```
 
 ```{r, plot_CMV}}
-#| title: Condições materiais de vida e respetivos domínios
+#| title: "Material Living Conditions and its domains"
 
 #|
 plots <- plot_for_group(df, group_column = "parent", group_value = "P1")
@@ -411,7 +405,7 @@ plots$plot_raw
 ```
 
 ```{r, plot_QV}}
-#| title: Qualidade de vida e respetivos domínios
+#| title: "Quality of Life and its domains"
 
 #|
 plots <- plot_for_group(df, group_column = "parent", group_value = "P2")
@@ -420,14 +414,14 @@ plots <- plot_for_group(df, group_column = "parent", group_value = "P2")
 plots$plot_raw
 ```
 
-# Condições materiais de vida
+# Material living conditions
 
 ## Row
 
 
 ```{r, valuebox_I05}
 #| content: valuebox
-#| title: "Desp. consumo fam. (2010-2022)"
+#| title: "Individual consumption expenditure by households (2010-2022)"
 
 list(
   icon = "file-medical",
@@ -438,7 +432,7 @@ list(
 
 ```{r, valuebox_I10}
 #| content: valuebox
-#| title: "Taxa risco pobreza (2010-2022)"
+#| title: "People at risk of poverty (2010-2021)"
 
 list(
   icon = "file-medical",
@@ -449,7 +443,7 @@ list(
 
 ```{r, valuebox_I19}
 #| content: valuebox
-#| title: "Taxa desemprego (2010-2022)"
+#| title: "Unemployment rate (2010-2022)"
 
 list(
   icon = "calendar-week",
@@ -463,7 +457,7 @@ list(
 
 
 ```{r, plot_D01}}
-#| title: Bem-estar económico
+#| title: "Economic well-being"
 
 
 plots <- plot_for_group(df, group_column = "parent", group_value = "D01")
@@ -475,7 +469,7 @@ plots$plot_raw
 
 
 ```{r, plot_D02}
-#| title: Vulnerabilidade económica
+#| title: "Economic vulnerability"
 
 plots <- plot_for_group(df, group_column = "parent", group_value = "D02")
 
@@ -485,7 +479,7 @@ plots$plot_raw
 ```
 
 ```{r, plot_D03}
-#| title: Emprego
+#| title: "Employment"
 
 plots <- plot_for_group(df, group_column = "parent", group_value = "D03")
 
@@ -494,13 +488,13 @@ plots$plot_raw
 #plots$plot_smoothed
 ```
 
-# Qualidade de vida
+# Quality of life
 
 ## Row
 
 ```{r, valuebox_I30}
 #| content: valuebox
-#| title: "Esperança de vida à nascença (2010-2022)"
+#| title: "Life expectancy at birth (2010-2022)"
 
 list(
   icon = "file-medical",
@@ -511,7 +505,7 @@ list(
 
 ```{r, valuebox_I46}
 #| content: valuebox
-#| title: "Prop. (30-34) com ensino superior (2010-2022)"
+#| title: "Tertiary educational attainment (2010-2022)"
 
 list(
   icon = "file-medical",
@@ -522,7 +516,7 @@ list(
 
 ```{r, valuebox_I58}
 #| content: valuebox
-#| title: "Grau satisf. vida geral (2010-2022)"
+#| title: "Overall life satisfaction (2010-2021)"
 
 list(
   icon = "calendar-week",
@@ -536,7 +530,7 @@ list(
 
 
 ```{r, plot_D04}
-#| title: Saúde
+#| title: "Health"
 
 
 plots <- plot_for_group(df, group_column = "parent", group_value = "D04")
@@ -548,7 +542,7 @@ plots$plot_raw
 
 
 ```{r, plot_D05}}
-#| title: Balanço vida-trabalho
+#| title: "Work-life balance"
 
 plots <- plot_for_group(df, group_column = "parent", group_value = "D05")
 
@@ -558,7 +552,7 @@ plots$plot_raw
 ```
 
 ```{r, plot_D06}
-#| title: Educação, conhecimento e competências
+#| title: "Education, knowledge and skills"
 
 plots <- plot_for_group(df, group_column = "parent", group_value = "D06")
 
@@ -569,7 +563,7 @@ plots$plot_raw
 
 
 ```{r, plot_D07}}
-#| title: Relações sociais e bem-estar subjetivo
+#| title: "Social relations and subjective well-being"
 
 
 plots <- plot_for_group(df, group_column = "parent", group_value = "D07")
@@ -581,7 +575,7 @@ plots$plot_raw
 
 
 ```{r, plot_D08}
-#| title: Participação cívica e governação
+#| title: "Civic participation and governance"
 
 plots <- plot_for_group(df, group_column = "parent", group_value = "D08")
 
@@ -591,7 +585,7 @@ plots$plot_raw
 ```
 
 ```{r, plot_D09}
-#| title: Segurança pessoal
+#| title: "Personal security"
 
 plots <- plot_for_group(df, group_column = "parent", group_value = "D09")
 
@@ -601,7 +595,7 @@ plots$plot_raw
 ```
 
 ```{r}
-#| title: Ambiente
+#| title: "Environment"
 
 plots <- plot_for_group(df, group_column = "parent", group_value = "D10")
 
@@ -610,13 +604,14 @@ plots$plot_raw
 #plots$plot_smoothed
 ```
 
-# Dados
+# Data
 
 ```{r, Dados}
-#| title: Dados
+#| title: "Data"
 
 df <- q1_3 |>
-  select(-ord, -Abreviatura)
+  select(-ord, -Nome, -Abreviatura, -Abbreviation) |>
+  rename("Indicator" = "Indicador")
 
 datatable(df)
 
