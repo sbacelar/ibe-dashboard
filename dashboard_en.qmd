@@ -354,7 +354,7 @@ of the indicator in 2010 and $n$ is the number of years between the two values;
 #| title: "WBI (2010-2022)"
 
 list(
-  icon = "file-medical",
+  icon = "emoji-smile",
   color = IBE_rate_color,
   value = paste0(IBE_rate, "%")
 )
@@ -365,7 +365,7 @@ list(
 #| title: "Material living conditions (2010-2022)"
 
 list(
-  icon = "file-medical",
+  icon = "currency-euro",
   color = CMV_rate_color,
   value = paste0(CMV_rate, "%")
 )
@@ -376,7 +376,7 @@ list(
 #| title: "Quality of life (2010-2022)"
 
 list(
-  icon = "calendar-week",
+  icon = "alt",
   color = QV_rate_color,
   value = paste0(QV_rate, "%")
 )
@@ -424,7 +424,7 @@ plots$plot_raw
 #| title: "Individual consumption expenditure by households (2010-2022)"
 
 list(
-  icon = "file-medical",
+  icon = "piggy-bank",
   color = I05_rate_color,
   value = paste0(I05_rate, "%")
 )
@@ -435,7 +435,7 @@ list(
 #| title: "People at risk of poverty (2010-2021)"
 
 list(
-  icon = "file-medical",
+  icon = "align-bottom",
   color = I10_rate_color,
   value = paste0(I10_rate, "%")
 )
@@ -446,7 +446,7 @@ list(
 #| title: "Unemployment rate (2010-2022)"
 
 list(
-  icon = "calendar-week",
+  icon = "activity",
   color = I19_rate_color,
   value = paste0(I19_rate, "%")
 )
@@ -497,7 +497,7 @@ plots$plot_raw
 #| title: "Life expectancy at birth (2010-2022)"
 
 list(
-  icon = "file-medical",
+  icon = "arrow-up-right",
   color = I30_rate_color,
   value = paste0(I30_rate, "%")
 )
@@ -508,7 +508,7 @@ list(
 #| title: "Tertiary educational attainment (2010-2022)"
 
 list(
-  icon = "file-medical",
+  icon = "backpack",
   color = I46_rate_color,
   value = paste0(I46_rate, "%")
 )
@@ -519,7 +519,7 @@ list(
 #| title: "Overall life satisfaction (2010-2021)"
 
 list(
-  icon = "calendar-week",
+  icon = "emoji-smile-fill",
   color = I58_rate_color,
   value = paste0(I58_rate, "%")
 )

@@ -354,7 +354,7 @@ do indicador em 2010 e $n$ é o número de anos entre os dois valores;
 #| title: "IBE (2010-2022)"
 
 list(
-  icon = "file-medical",
+  icon = "emoji-smile",
   color = IBE_rate_color,
   value = paste0(IBE_rate, "%")
 )
@@ -365,7 +365,7 @@ list(
 #| title: "Condições materiais de vida (2010-2022)"
 
 list(
-  icon = "file-medical",
+  icon = "currency-euro",
   color = CMV_rate_color,
   value = paste0(CMV_rate, "%")
 )
@@ -376,7 +376,7 @@ list(
 #| title: "Qualidade de vida (2010-2022)"
 
 list(
-  icon = "calendar-week",
+  icon = "alt",
   color = QV_rate_color,
   value = paste0(QV_rate, "%")
 )
@@ -424,7 +424,7 @@ plots$plot_raw
 #| title: "Desp. consumo fam. (2010-2022)"
 
 list(
-  icon = "file-medical",
+  icon = "piggy-bank",
   color = I05_rate_color,
   value = paste0(I05_rate, "%")
 )
@@ -435,7 +435,7 @@ list(
 #| title: "Taxa risco pobreza (2010-2021)"
 
 list(
-  icon = "file-medical",
+  icon = "align-bottom",
   color = I10_rate_color,
   value = paste0(I10_rate, "%")
 )
@@ -446,7 +446,7 @@ list(
 #| title: "Taxa desemprego (2010-2022)"
 
 list(
-  icon = "calendar-week",
+  icon = "activity",
   color = I19_rate_color,
   value = paste0(I19_rate, "%")
 )
@@ -497,7 +497,7 @@ plots$plot_raw
 #| title: "Esperança de vida à nascença (2010-2022)"
 
 list(
-  icon = "file-medical",
+  icon = "arrow-up-right",
   color = I30_rate_color,
   value = paste0(I30_rate, "%")
 )
@@ -508,7 +508,7 @@ list(
 #| title: "Prop. (30-34) com ensino superior (2010-2022)"
 
 list(
-  icon = "file-medical",
+  icon = "backpack",
   color = I46_rate_color,
   value = paste0(I46_rate, "%")
 )
@@ -519,7 +519,7 @@ list(
 #| title: "Grau satisf. vida geral (2010-2021)"
 
 list(
-  icon = "calendar-week",
+  icon = "emoji-smile-fill",
   color = I58_rate_color,
   value = paste0(I58_rate, "%")
 )
