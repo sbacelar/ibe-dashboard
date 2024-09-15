@@ -333,6 +333,8 @@ I58_rate_color <- value_box_color(I58_rate)
 
 [English version](dashboard_en.html)
 
+::: {.callout-note collapse="true"}
+
 ### Notas
 
 1. as caixas com valores apresentam a taxa de variação média anual entre 2010 e 
@@ -344,6 +346,8 @@ do indicador em 2010 e $n$ é o número de anos entre os dois valores;
     - verde: taxa de variação média anual superior a 4%;
     - amarelo: taxa de variação média anual entre -4% e 4%;
     - vermelho: taxa de variação média anual inferior a -4%.
+
+:::
 
 # Global
 
