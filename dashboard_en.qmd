@@ -334,7 +334,6 @@ I58_rate_color <- value_box_color(I58_rate)
 [Versão em Português](dashboard.html)
 
 ::: {.callout-note collapse="true"}
-
 ### Notes
 
 1. the boxes with values show the average annual rate of change between 2010 and 
@@ -346,7 +345,6 @@ of the indicator in 2010 and $n$ is the number of years between the two values;
     - green: average annual rate of change greater than 4%;
     - yellow: average annual rate of change between -4% and 4%;
     - red: average annual rate of change of less than -4%.
-
 :::
 
 # Global
