@@ -342,7 +342,7 @@ where $X_{\text{final}}$ is the most recent value, $X_{\text{2010}}$ is the valu
 of the indicator in 2010 and $n$ is the number of years between the two values;
 3. The colour of the boxes depends on the value of the average annual rate of change:
     - green: average annual rate of change greater than 4%;
-    - yellow: average annual rate of change between -4% and -4%;
+    - yellow: average annual rate of change between -4% and 4%;
     - red: average annual rate of change of less than -4%.
 
 # Global

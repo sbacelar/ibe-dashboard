@@ -1,7 +1,7 @@
 ---
 title: "IBE - dashboard"
 subtitle: "1/2 hoRa"
-date: "2021-10-18"
+date: "2024-10-18"
 author: "Sérgio Bacelar"
 format: 
   revealjs:
@@ -44,29 +44,21 @@ editor: visual
 
 -   Para melhorar a leitura das legendas dos gráficos;
 -   Como abreviar a seguinte designação de um indicador estatístico:
-    -   "Proporção da população desempregada inscrita num Centro de Emprego do 
-    IEFP que não recebe nenhum tipo de subsídio relacionado com o desemprego"
+    -   "Proporção da população desempregada inscrita num Centro de Emprego do IEFP que não recebe nenhum tipo de subsídio relacionado com o desemprego"
 -   Utilização de LLM para gerar abreviaturas dos indicadores estatísticos
 
 ## Claude gerou um logotipo para o dashboard {.smaller}
 
 This logo design features:
 
-1. The letters "IBE" in a bold, sans-serif font (Arial).
-2. Each letter is in a different color:
-   - I: Blue (#4A90E2)
-   - B: Teal (#50E3C2)
-   - E: Orange (#F5A623)
-3. Above each letter is a small, semi-transparent circle in the corresponding 
-color, adding a subtle decorative element.
+1.  The letters "IBE" in a bold, sans-serif font (Arial).
+2.  Each letter is in a different color:
+    -   I: Blue (#4A90E2)
+    -   B: Teal (#50E3C2)
+    -   E: Orange (#F5A623)
+3.  Above each letter is a small, semi-transparent circle in the corresponding color, adding a subtle decorative element.
 
-The design is simple and clean, which makes it versatile for various uses in 
-the Well-being Index publication. The colors chosen are vibrant and can be 
-associated with different aspects of well-being:
-- Blue: Often associated with trust, stability, and calmness
-- Teal: Can represent balance, refreshment, and mental clarity
-- Orange: Often linked to enthusiasm, creativity, and vitality
-
+The design is simple and clean, which makes it versatile for various uses in the Well-being Index publication. The colors chosen are vibrant and can be associated with different aspects of well-being: - Blue: Often associated with trust, stability, and calmness - Teal: Can represent balance, refreshment, and mental clarity - Orange: Often linked to enthusiasm, creativity, and vitality
 
 ## Versão bilingue
 

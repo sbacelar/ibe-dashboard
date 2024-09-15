@@ -342,7 +342,7 @@ onde $X_{\text{final}}$ é o valor mais recente, $X_{\text{2010}}$ é o valor
 do indicador em 2010 e $n$ é o número de anos entre os dois valores;
 3. A cor das caixas depende do valor da taxa de variação média anual:
     - verde: taxa de variação média anual superior a 4%;
-    - amarelo: taxa de variação média anual entre -4% e -4%;
+    - amarelo: taxa de variação média anual entre -4% e 4%;
     - vermelho: taxa de variação média anual inferior a -4%.
 
 # Global
