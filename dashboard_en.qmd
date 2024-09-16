@@ -98,7 +98,7 @@ df <- q1_3_long |>
   mutate(variable_label = paste(variable_code, variable_label, sep = ": "))
 ```
 
-```{r, plot-functions}
+```{r, plot-variables}
 #| label: all-values
 #| results: hide
 
@@ -214,9 +214,11 @@ plot_variables <- function(data,
   
   return(p)
 }
+```
 
-
-# one_function ------------------------------------------------------------
+```{r, plot-for_group}
+#| label: all-values2
+#| results: hide
 
 plot_for_group <- function(data, group_column, group_value) {
   # , title_raw = "Custom Title: Raw Data", title_smoothed = "Custom Title: Smoothed Data"

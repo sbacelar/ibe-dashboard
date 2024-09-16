@@ -98,15 +98,9 @@ df <- q1_3_long |>
   mutate(variable_label = paste(variable_code, variable_label, sep = ": "))
 ```
 
-```{r, plot-functions}
-#| label: all-values
+```{r, plot-variables}
+#| label: all-values1
 #| results: hide
-
-
-
-
-
-
 
 plot_variables <- function(data,
                            variables_to_plot,
@@ -166,11 +160,13 @@ plot_variables <- function(data,
   
   return(p_plotly)
 }
+```
 
-
+```{r, plot-for-group}
+#| label: all-values2
+#| results: hide
 
 plot_for_group <- function(data, group_column, group_value) {
-  # , title_raw = "Custom Title: Raw Data", title_smoothed = "Custom Title: Smoothed Data"
   # Function to get vars_plot based on group_value
   get_vars_plot <- function(data, group_column, group_value) {
     group_column_sym <- sym(group_column)  # Convert string column name to symbol
