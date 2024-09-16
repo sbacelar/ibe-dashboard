@@ -34,7 +34,7 @@
     "href": "IBE_Dashboard_MH.html#abreviaturas-das-designações-dos-indicadores-estatísticos",
     "title": "IBE - dashboard",
     "section": "Abreviaturas das designações dos indicadores estatísticos",
-    "text": "Abreviaturas das designações dos indicadores estatísticos\n\nPara melhorar a leitura das legendas dos gráficos;\nComo abreviar a seguinte designação de um indicador estatístico:\n\n“Proporção da população desempregada inscrita num Centro de Emprego do IEFP que não recebe nenhum tipo de subsídio relacionado com o desemprego”\n\nUtilização de LLM para gerar abreviaturas das designações dos indicadores estatísticos",
+    "text": "Abreviaturas das designações dos indicadores estatísticos\n\nA leitura das legendas dos gráficos é prejudicada pela extensão dos textos;\nComo abreviar, p. ex., a seguinte designação de um indicador estatístico:\n\n“Proporção da população desempregada inscrita num Centro de Emprego do IEFP que não recebe nenhum tipo de subsídio relacionado com o desemprego”\n\nUtilização de aplicações baseadas em LLM para gerar abreviaturas das designações dos indicadores estatísticos",
     "crumbs": [
       "Apresentação (MH)"
     ]
@@ -74,7 +74,7 @@
     "href": "IBE_Dashboard_MH.html#agradecimentos",
     "title": "IBE - dashboard",
     "section": "Agradecimentos",
-    "text": "Agradecimentos\n\nMine Cetinkaya-Rudel, https://github.com/mine-cetinkaya-rundel/ld-dashboard/blob/main/dashboard.qmd\nMelissa Van Bussel, https://www.youtube.com/watch?v=5zYrgRylkH0&list=PLSjaBj3ul8GrS0uCKso0PuNeb4PQY-WWc&index=6&ab_channel=MelissaVanBussel%28ggnot2%29",
+    "text": "Agradecimentos\n\nMine Cetinkaya-Rudel\nMelissa Van Bussel",
     "crumbs": [
       "Apresentação (MH)"
     ]
@@ -84,7 +84,7 @@
     "href": "IBE_Dashboard_MH.html#fiasco-a-utilização-da-library-shiny",
     "title": "IBE - dashboard",
     "section": "Fiasco: a utilização da library shiny",
-    "text": "Fiasco: a utilização da library shiny\n\nSuavizar os gráficos (loess smoothing);\nUm pequeno exemplo em https://sbac.shinyapps.io/ibe_smooth",
+    "text": "Fiasco: a utilização da library shiny\n\nSuavizar os gráficos (loess smoothing);\nUm pequeno exemplo em shinyapps",
     "crumbs": [
       "Apresentação (MH)"
     ]
