@@ -98,8 +98,8 @@ df <- q1_3_long |>
   mutate(variable_label = paste(variable_code, variable_label, sep = ": "))
 ```
 
-```{r, plot-functions}
-#| label: all-values
+```{r, plot-variables}
+#| label: all-values1
 #| results: hide
 
 plot_variables <- function(data,
@@ -214,8 +214,12 @@ plot_variables <- function(data,
   
   return(p)
 }
+```
 
 
+```{r, plot-for-group}
+#| label: all-values2
+#| results: hide
 
 
 plot_for_group <- function(data, group_column, group_value) {
