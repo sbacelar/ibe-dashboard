@@ -54,7 +54,7 @@
     "href": "IBE_Dashboard_MH.html#agradecimentos",
     "title": "IBE - dashboard",
     "section": "Agradecimentos",
-    "text": "Agradecimentos\n\nMine Cetinkaya-Rudel, https://github.com/mine-cetinkaya-rundel/ld-dashboard/blob/main/dashboard.qmd\nMelissa Van Bussel, https://www.youtube.com/watch?v=5zYrgRylkH0&list=PLSjaBj3ul8GrS0uCKso0PuNeb4PQY-WWc&index=6&ab_channel=MelissaVanBussel%28ggnot2%29",
+    "text": "Agradecimentos\n\nMine Cetinkaya-Rudel\nMelissa Van Bussel",
     "crumbs": [
       "Apresentação (MH)"
     ]
@@ -64,7 +64,7 @@
     "href": "IBE_Dashboard_MH.html#fiasco-a-utilização-da-library-shiny",
     "title": "IBE - dashboard",
     "section": "Fiasco: a utilização da library shiny",
-    "text": "Fiasco: a utilização da library shiny\n\nSuavizar os gráficos (loess smoothing);\nUm pequeno exemplo em https://sbac.shinyapps.io/ibe_smooth",
+    "text": "Fiasco: a utilização da library shiny\n\nSuavizar os gráficos (loess smoothing);\nUm pequeno exemplo em shinyapps",
     "crumbs": [
       "Apresentação (MH)"
     ]

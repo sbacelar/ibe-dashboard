@@ -41,12 +41,12 @@ editor: visual
 
 ## Abreviaturas das designações dos indicadores estatísticos
 
--   Para melhorar a leitura das legendas dos gráficos;
--   Como abreviar a seguinte designação de um indicador estatístico:
+-   A leitura das legendas dos gráficos é prejudicada pela extensão dos textos;
+-   Como abreviar, p. ex., a seguinte designação de um indicador estatístico:
     -   "Proporção da população desempregada inscrita num Centro de Emprego do IEFP que não recebe nenhum tipo de subsídio relacionado com o desemprego"
--   Utilização de LLM para gerar abreviaturas das designações dos indicadores estatísticos
+-   Utilização de aplicações baseadas em LLM para gerar abreviaturas das designações dos indicadores estatísticos
 
-## Claude gerou um logotipo para o dashboard {.smaller}
+## *Claude* gerou um logotipo para o dashboard {.smaller}
 
 This logo design features:
 
@@ -70,14 +70,14 @@ The design is simple and clean, which makes it versatile for various uses in the
 -   Criação de gráficos multi-linha: utilização da library `plotly` e não de `ggplotly`
 -   Código com um desvio obsessivo: colocar "tudo" numa única função
 -   O problema dos gráficos com dados suavizados
--   Publicação do dashboard: GitHub Actions (automatização do deployment) e GitHub Pages (publicação num servidor web estático)
+-   Publicação do dashboard: *GitHub Actions* (automatização do deployment) e *GitHub Pages* (publicação num servidor web estático)
 
 ## Agradecimentos
 
--   Mine Cetinkaya-Rudel, [https://github.com/mine-cetinkaya-rundel/ld-dashboard/blob/main/dashboard.qmd]()
--   Melissa Van Bussel, [https://www.youtube.com/watch?v=5zYrgRylkH0&list=PLSjaBj3ul8GrS0uCKso0PuNeb4PQY-WWc&index=6&ab_channel=MelissaVanBussel%28ggnot2%29]()
+-   [Mine Cetinkaya-Rudel](https://github.com/mine-cetinkaya-rundel/ld-dashboard/blob/main/dashboard.qmd)
+-   [Melissa Van Bussel](https://www.youtube.com/watch?v=5zYrgRylkH0&list=PLSjaBj3ul8GrS0uCKso0PuNeb4PQY-WWc&index=6&ab_channel=MelissaVanBussel%28ggnot2%29)
 
 ## Fiasco: a utilização da library `shiny`
 
 -   Suavizar os gráficos (*loess smoothing*);
--   Um pequeno exemplo em [https://sbac.shinyapps.io/ibe_smooth](shinyapps)
+-   Um pequeno exemplo em [shinyapps](https://sbac.shinyapps.io/ibe_smooth/)
