@@ -64,7 +64,7 @@
     "href": "IBE_Dashboard_MH.html#fiasco-a-utilização-da-library-shiny",
     "title": "IBE - dashboard",
     "section": "Fiasco: a utilização da library shiny",
-    "text": "Fiasco: a utilização da library shiny\n\nSuavizar os gráficos (loess smoothing);",
+    "text": "Fiasco: a utilização da library shiny\n\nSuavizar os gráficos (loess smoothing);\nUm pequeno exemplo em https://sbac.shinyapps.io/ibe_smooth",
     "crumbs": [
       "Apresentação (MH)"
     ]
@@ -74,7 +74,7 @@
     "href": "IBE_Dashboard_MH.html#algumas-soluções-para-o-problema-dos-gráficos-spaghetti",
     "title": "IBE - dashboard",
     "section": "Algumas soluções para o problema dos gráficos spaghetti",
-    "text": "Algumas soluções para o problema dos gráficos spaghetti\n\nVárias soluções possíveis\nSolução adotada com base em gráficos interativos: plotly\nCódigo com um desvio obsessivo: colocar “tudo” numa única função\n\n\n\n\nHighlighting Key Lines\nSmall Multiples\nFaceted Charts\nSmoothing or Aggregating\nInteractive Charts\n\n\n\nJittering\nColor and Opacity Adjustments\nSummary Statistics\nUse of Symbols\nLayering and Ordering",
+    "text": "Algumas soluções para o problema dos gráficos spaghetti\n\nVárias soluções possíveis\nSolução adotada com base em gráficos interativos: plotly\n\n\n\n\nHighlighting Key Lines\nSmall Multiples\nFaceted Charts\nSmoothing or Aggregating\nInteractive Charts\n\n\n\nJittering\nColor and Opacity Adjustments\nSummary Statistics\nUse of Symbols\nLayering and Ordering",
     "crumbs": [
       "Apresentação (MH)"
     ]
@@ -85,6 +85,16 @@
     "title": "IBE - dashboard",
     "section": "Claude gerou um logotipo para o dashboard",
     "text": "Claude gerou um logotipo para o dashboard\nThis logo design features:\n\nThe letters “IBE” in a bold, sans-serif font (Arial).\nEach letter is in a different color:\n\nI: Blue (#4A90E2)\nB: Teal (#50E3C2)\nE: Orange (#F5A623)\n\nAbove each letter is a small, semi-transparent circle in the corresponding color, adding a subtle decorative element.\n\nThe design is simple and clean, which makes it versatile for various uses in the Well-being Index publication. The colors chosen are vibrant and can be associated with different aspects of well-being: - Blue: Often associated with trust, stability, and calmness - Teal: Can represent balance, refreshment, and mental clarity - Orange: Often linked to enthusiasm, creativity, and vitality",
+    "crumbs": [
+      "Apresentação (MH)"
+    ]
+  },
+  {
+    "objectID": "IBE_Dashboard_MH.html#solução-adotada",
+    "href": "IBE_Dashboard_MH.html#solução-adotada",
+    "title": "IBE - dashboard",
+    "section": "Solução adotada",
+    "text": "Solução adotada\n\nCriação de gráficos multi-linha: utilização da library plotly e não de ggplotly\nCódigo com um desvio obsessivo: colocar “tudo” numa única função\nO problema dos gráficos com dados suavizados\nPublicação do dashboard: GitHub Actions (automatização do deployment) e GitHub Pages (publicação num servidor web estático)",
     "crumbs": [
       "Apresentação (MH)"
     ]

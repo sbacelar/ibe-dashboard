@@ -80,3 +80,4 @@ The design is simple and clean, which makes it versatile for various uses in the
 ## Fiasco: a utilização da library `shiny`
 
 -   Suavizar os gráficos (*loess smoothing*);
+-   Um pequeno exemplo em [https://sbac.shinyapps.io/ibe_smooth](shinyapps)
