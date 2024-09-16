@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sbacelar.github.io/ibe-dashboard/dashboard_en.html</loc>
-    <lastmod>2024-09-16T14:09:06.641Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sbacelar.github.io/ibe-dashboard/index.html</loc>
-    <lastmod>2024-09-16T14:09:06.645Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sbacelar.github.io/ibe-dashboard/dashboard.html</loc>
-    <lastmod>2024-09-16T14:09:06.641Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sbacelar.github.io/ibe-dashboard/IBE_Dashboard_MH.html</loc>
-    <lastmod>2024-09-16T14:09:06.593Z</lastmod>
+    <loc>https://sbacelar.github.io/ibe-dashboard/dashboard_new.html</loc>
+    <lastmod>2024-09-16T15:17:32.348Z</lastmod>
   </url>
   <url>
     <loc>https://sbacelar.github.io/ibe-dashboard/about.html</loc>
-    <lastmod>2024-09-16T14:09:06.641Z</lastmod>
+    <lastmod>2024-09-16T15:17:32.348Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sbacelar.github.io/ibe-dashboard/IBE_Dashboard_MH.html</loc>
+    <lastmod>2024-09-16T15:17:32.304Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sbacelar.github.io/ibe-dashboard/dashboard.html</loc>
+    <lastmod>2024-09-16T15:17:32.348Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sbacelar.github.io/ibe-dashboard/index.html</loc>
+    <lastmod>2024-09-16T15:17:32.348Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sbacelar.github.io/ibe-dashboard/dashboard_en.html</loc>
+    <lastmod>2024-09-16T15:17:32.348Z</lastmod>
   </url>
 </urlset>
