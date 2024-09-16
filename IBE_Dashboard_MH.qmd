@@ -44,7 +44,7 @@ editor: visual
 -   Para melhorar a leitura das legendas dos gráficos;
 -   Como abreviar a seguinte designação de um indicador estatístico:
     -   "Proporção da população desempregada inscrita num Centro de Emprego do IEFP que não recebe nenhum tipo de subsídio relacionado com o desemprego"
--   Utilização de LLM para gerar abreviaturas dos indicadores estatísticos
+-   Utilização de LLM para gerar abreviaturas das designações dos indicadores estatísticos
 
 ## Claude gerou um logotipo para o dashboard {.smaller}
 
@@ -63,7 +63,7 @@ The design is simple and clean, which makes it versatile for various uses in the
 
 -   Utilização de `profiles` (ver [https://marioangst.com/en/blog/posts/multi-language-quarto/]());
 -   Utilização da library `babelquarto` [https://docs.ropensci.org/babelquarto/]()
--   Solução adotada: !DRY
+-   Solução implementada: !DRY
 
 ## Solução adotada
 

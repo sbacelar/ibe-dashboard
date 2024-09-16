@@ -216,7 +216,7 @@ plot_variables <- function(data,
 }
 
 
-# one_function ------------------------------------------------------------
+
 
 plot_for_group <- function(data, group_column, group_value) {
   # , title_raw = "Custom Title: Raw Data", title_smoothed = "Custom Title: Smoothed Data"
