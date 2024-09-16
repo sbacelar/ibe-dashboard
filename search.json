@@ -34,7 +34,7 @@
     "href": "IBE_Dashboard_MH.html#abreviaturas-das-designações-dos-indicadores-estatísticos",
     "title": "IBE - dashboard",
     "section": "Abreviaturas das designações dos indicadores estatísticos",
-    "text": "Abreviaturas das designações dos indicadores estatísticos\n\nPara melhorar a leitura das legendas dos gráficos;\nComo abreviar a seguinte designação de um indicador estatístico:\n\n“Proporção da população desempregada inscrita num Centro de Emprego do IEFP que não recebe nenhum tipo de subsídio relacionado com o desemprego”\n\nUtilização de LLM para gerar abreviaturas dos indicadores estatísticos",
+    "text": "Abreviaturas das designações dos indicadores estatísticos\n\nPara melhorar a leitura das legendas dos gráficos;\nComo abreviar a seguinte designação de um indicador estatístico:\n\n“Proporção da população desempregada inscrita num Centro de Emprego do IEFP que não recebe nenhum tipo de subsídio relacionado com o desemprego”\n\nUtilização de LLM para gerar abreviaturas das designações dos indicadores estatísticos",
     "crumbs": [
       "Apresentação (MH)"
     ]
@@ -54,7 +54,7 @@
     "href": "IBE_Dashboard_MH.html#versão-bilingue",
     "title": "IBE - dashboard",
     "section": "Versão bilingue",
-    "text": "Versão bilingue\n\nUtilização de profiles (ver https://marioangst.com/en/blog/posts/multi-language-quarto/);\nUtilização da library babelquarto https://docs.ropensci.org/babelquarto/\nSolução adotada: !DRY",
+    "text": "Versão bilingue\n\nUtilização de profiles (ver https://marioangst.com/en/blog/posts/multi-language-quarto/);\nUtilização da library babelquarto https://docs.ropensci.org/babelquarto/\nSolução implementada: !DRY",
     "crumbs": [
       "Apresentação (MH)"
     ]
