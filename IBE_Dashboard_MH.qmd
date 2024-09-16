@@ -1,7 +1,7 @@
 ---
 title: "IBE - dashboard"
 subtitle: "1/2 hoRa"
-date: "2024-10-18"
+date: "2024-09-18"
 author: "Sérgio Bacelar"
 format: 
   revealjs:
@@ -20,7 +20,6 @@ editor: visual
 
 -   Várias soluções possíveis
 -   Solução adotada com base em gráficos interativos: `plotly`
--   Código com um desvio obsessivo: colocar "tudo" numa única função
 
 ::: columns
 ::: {.column width="50%"}
@@ -65,6 +64,13 @@ The design is simple and clean, which makes it versatile for various uses in the
 -   Utilização de `profiles` (ver [https://marioangst.com/en/blog/posts/multi-language-quarto/]());
 -   Utilização da library `babelquarto` [https://docs.ropensci.org/babelquarto/]()
 -   Solução adotada: !DRY
+
+## Solução adotada
+
+-   Criação de gráficos multi-linha: utilização da library `plotly` e não de `ggplotly`
+-   Código com um desvio obsessivo: colocar "tudo" numa única função
+-   O problema dos gráficos com dados suavizados
+-   Publicação do dashboard: GitHub Actions e GitHub Pages
 
 ## Agradecimentos
 
