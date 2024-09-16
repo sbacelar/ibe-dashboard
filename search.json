@@ -64,7 +64,7 @@
     "href": "IBE_Dashboard_MH.html#solução-adotada",
     "title": "IBE - dashboard",
     "section": "Solução adotada",
-    "text": "Solução adotada\n\nCriação de gráficos multi-linha: utilização da library plotly e não de ggplotly\nCódigo com um desvio obsessivo: colocar “tudo” numa única função\nO problema dos gráficos com dados suavizados\nPublicação do dashboard: GitHub Actions e GitHub Pages",
+    "text": "Solução adotada\n\nCriação de gráficos multi-linha: utilização da library plotly e não de ggplotly\nCódigo com um desvio obsessivo: colocar “tudo” numa única função\nO problema dos gráficos com dados suavizados\nPublicação do dashboard: GitHub Actions (automatização do deployment) e GitHub Pages (publicação num servidor web estático)",
     "crumbs": [
       "Apresentação (MH)"
     ]
