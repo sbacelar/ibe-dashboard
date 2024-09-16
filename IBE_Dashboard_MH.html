@@ -12,7 +12,7 @@
   <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Sérgio Bacelar">
-  <meta name="dcterms.date" content="2024-10-18">
+  <meta name="dcterms.date" content="2024-09-18">
   <title>ibe-dashboard – IBE - dashboard</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -339,7 +339,7 @@ Sérgio Bacelar
 </div>
 </div>
 
-  <p class="date">2024-10-18</p>
+  <p class="date">2024-09-18</p>
 </section>
 <section id="origens-o-problema-dos-gráficos-spaghetti" class="slide level2 smaller">
 <h2>Origens: o problema dos gráficos <em>spaghetti</em></h2>
@@ -354,7 +354,6 @@ Sérgio Bacelar
 <ul>
 <li>Várias soluções possíveis</li>
 <li>Solução adotada com base em gráficos interativos: <code>plotly</code></li>
-<li>Código com um desvio obsessivo: colocar “tudo” numa única função</li>
 </ul>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -407,6 +406,15 @@ Sérgio Bacelar
 <li>Utilização de <code>profiles</code> (ver <a href="">https://marioangst.com/en/blog/posts/multi-language-quarto/</a>);</li>
 <li>Utilização da library <code>babelquarto</code> <a href="">https://docs.ropensci.org/babelquarto/</a></li>
 <li>Solução adotada: !DRY</li>
+</ul>
+</section>
+<section id="solução-adotada" class="slide level2">
+<h2>Solução adotada</h2>
+<ul>
+<li>Criação de gráficos multi-linha: utilização da library <code>plotly</code> e não de <code>ggplotly</code></li>
+<li>Código com um desvio obsessivo: colocar “tudo” numa única função</li>
+<li>O problema dos gráficos com dados suavizados</li>
+<li>Publicação do dashboard: GitHub Actions e GitHub Pages</li>
 </ul>
 </section>
 <section id="agradecimentos" class="slide level2">

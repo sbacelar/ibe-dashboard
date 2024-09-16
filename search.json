@@ -24,7 +24,7 @@
     "href": "IBE_Dashboard_MH.html#algumas-soluções-para-o-problema-dos-gráficos-spaghetti",
     "title": "IBE - dashboard",
     "section": "Algumas soluções para o problema dos gráficos spaghetti",
-    "text": "Algumas soluções para o problema dos gráficos spaghetti\n\nVárias soluções possíveis\nSolução adotada com base em gráficos interativos: plotly\nCódigo com um desvio obsessivo: colocar “tudo” numa única função\n\n\n\n\nHighlighting Key Lines\nSmall Multiples\nFaceted Charts\nSmoothing or Aggregating\nInteractive Charts\n\n\n\nJittering\nColor and Opacity Adjustments\nSummary Statistics\nUse of Symbols\nLayering and Ordering",
+    "text": "Algumas soluções para o problema dos gráficos spaghetti\n\nVárias soluções possíveis\nSolução adotada com base em gráficos interativos: plotly\n\n\n\n\nHighlighting Key Lines\nSmall Multiples\nFaceted Charts\nSmoothing or Aggregating\nInteractive Charts\n\n\n\nJittering\nColor and Opacity Adjustments\nSummary Statistics\nUse of Symbols\nLayering and Ordering",
     "crumbs": [
       "Apresentação (MH)"
     ]
@@ -55,6 +55,16 @@
     "title": "IBE - dashboard",
     "section": "Versão bilingue",
     "text": "Versão bilingue\n\nUtilização de profiles (ver https://marioangst.com/en/blog/posts/multi-language-quarto/);\nUtilização da library babelquarto https://docs.ropensci.org/babelquarto/\nSolução adotada: !DRY",
+    "crumbs": [
+      "Apresentação (MH)"
+    ]
+  },
+  {
+    "objectID": "IBE_Dashboard_MH.html#solução-adotada",
+    "href": "IBE_Dashboard_MH.html#solução-adotada",
+    "title": "IBE - dashboard",
+    "section": "Solução adotada",
+    "text": "Solução adotada\n\nCriação de gráficos multi-linha: utilização da library plotly e não de ggplotly\nCódigo com um desvio obsessivo: colocar “tudo” numa única função\nO problema dos gráficos com dados suavizados\nPublicação do dashboard: GitHub Actions e GitHub Pages",
     "crumbs": [
       "Apresentação (MH)"
     ]
