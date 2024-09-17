@@ -374,8 +374,8 @@ Sérgio Bacelar
 </ol>
 </div></div>
 </section>
-<section id="abreviaturas-das-designações-dos-indicadores-estatísticos" class="slide level2">
-<h2>Abreviaturas das designações dos indicadores estatísticos</h2>
+<section id="divagação-i---abreviaturas-das-designações-dos-indicadores-estatísticos" class="slide level2">
+<h2>Divagação I - Abreviaturas das designações dos indicadores estatísticos</h2>
 <ul>
 <li>A leitura das legendas dos gráficos é prejudicada pela extensão dos textos;</li>
 <li>Como abreviar, p.&nbsp;ex., a seguinte designação de um indicador estatístico:
@@ -385,8 +385,8 @@ Sérgio Bacelar
 <li>Utilização de aplicações baseadas em LLM para gerar abreviaturas das designações dos indicadores estatísticos</li>
 </ul>
 </section>
-<section id="claude-gerou-um-logotipo-para-o-dashboard" class="slide level2 smaller">
-<h2><em>Claude</em> gerou um logotipo para o dashboard</h2>
+<section id="divagação-ii---claude-gerou-um-logotipo-para-o-dashboard" class="slide level2 smaller">
+<h2>Divagação II - <em>Claude</em> gerou um logotipo para o dashboard</h2>
 <p>This logo design features:</p>
 <ol type="1">
 <li>The letters “IBE” in a bold, sans-serif font (Arial).</li>
@@ -400,16 +400,16 @@ Sérgio Bacelar
 </ol>
 <p>The design is simple and clean, which makes it versatile for various uses in the Well-being Index publication. The colors chosen are vibrant and can be associated with different aspects of well-being: - Blue: Often associated with trust, stability, and calmness - Teal: Can represent balance, refreshment, and mental clarity - Orange: Often linked to enthusiasm, creativity, and vitality</p>
 </section>
-<section id="versão-bilingue" class="slide level2">
-<h2>Versão bilingue</h2>
+<section id="uma-necessidade-versão-bilingue" class="slide level2">
+<h2>Uma necessidade: versão bilingue</h2>
 <ul>
 <li>Utilização de <code>profiles</code> (ver <a href="">https://marioangst.com/en/blog/posts/multi-language-quarto/</a>);</li>
 <li>Utilização da library <code>babelquarto</code> <a href="">https://docs.ropensci.org/babelquarto/</a></li>
 <li>Solução implementada: !DRY</li>
 </ul>
 </section>
-<section id="solução-adotada" class="slide level2">
-<h2>Solução adotada</h2>
+<section id="solução-adotada-para-a-criação-do-dashboard-em-quarto" class="slide level2">
+<h2>Solução adotada para a criação do dashboard em Quarto</h2>
 <ul>
 <li>Criação de gráficos multi-linha: utilização da library <code>plotly</code> e não de <code>ggplotly</code></li>
 <li>Código com um desvio obsessivo: colocar “tudo” numa única função</li>
@@ -427,7 +427,7 @@ Sérgio Bacelar
 <section id="fiasco-a-utilização-da-library-shiny" class="slide level2">
 <h2>Fiasco: a utilização da library <code>shiny</code></h2>
 <ul>
-<li>Suavizar os gráficos (<em>loess smoothing</em>);</li>
+<li>Suavizar os gráficos (<em>loess smoothing</em>); LOESS = “locally weighted scatterplot smoothing”</li>
 <li>Um pequeno exemplo em <a href="https://sbac.shinyapps.io/ibe_smooth/">shinyapps</a></li>
 </ul>
 
