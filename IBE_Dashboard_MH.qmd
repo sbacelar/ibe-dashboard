@@ -39,14 +39,14 @@ editor: visual
 :::
 :::
 
-## Abreviaturas das designações dos indicadores estatísticos
+## Divagação I - Abreviaturas das designações dos indicadores estatísticos
 
 -   A leitura das legendas dos gráficos é prejudicada pela extensão dos textos;
 -   Como abreviar, p. ex., a seguinte designação de um indicador estatístico:
     -   "Proporção da população desempregada inscrita num Centro de Emprego do IEFP que não recebe nenhum tipo de subsídio relacionado com o desemprego"
 -   Utilização de aplicações baseadas em LLM para gerar abreviaturas das designações dos indicadores estatísticos
 
-## *Claude* gerou um logotipo para o dashboard {.smaller}
+## Divagação II - *Claude* gerou um logotipo para o dashboard {.smaller}
 
 This logo design features:
 
@@ -59,13 +59,13 @@ This logo design features:
 
 The design is simple and clean, which makes it versatile for various uses in the Well-being Index publication. The colors chosen are vibrant and can be associated with different aspects of well-being: - Blue: Often associated with trust, stability, and calmness - Teal: Can represent balance, refreshment, and mental clarity - Orange: Often linked to enthusiasm, creativity, and vitality
 
-## Versão bilingue
+## Uma necessidade: versão bilingue
 
 -   Utilização de `profiles` (ver [https://marioangst.com/en/blog/posts/multi-language-quarto/]());
 -   Utilização da library `babelquarto` [https://docs.ropensci.org/babelquarto/]()
 -   Solução implementada: !DRY
 
-## Solução adotada
+## Solução adotada para a criação do dashboard em Quarto
 
 -   Criação de gráficos multi-linha: utilização da library `plotly` e não de `ggplotly`
 -   Código com um desvio obsessivo: colocar "tudo" numa única função
@@ -79,5 +79,5 @@ The design is simple and clean, which makes it versatile for various uses in the
 
 ## Fiasco: a utilização da library `shiny`
 
--   Suavizar os gráficos (*loess smoothing*);
+-   Suavizar os gráficos (*loess smoothing*); LOESS = "locally weighted scatterplot smoothing"
 -   Um pequeno exemplo em [shinyapps](https://sbac.shinyapps.io/ibe_smooth/)

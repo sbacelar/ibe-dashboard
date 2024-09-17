@@ -64,7 +64,7 @@
     "href": "IBE_Dashboard_MH.html#fiasco-a-utilização-da-library-shiny",
     "title": "IBE - dashboard",
     "section": "Fiasco: a utilização da library shiny",
-    "text": "Fiasco: a utilização da library shiny\n\nSuavizar os gráficos (loess smoothing);\nUm pequeno exemplo em shinyapps",
+    "text": "Fiasco: a utilização da library shiny\n\nSuavizar os gráficos (loess smoothing); LOESS = “locally weighted scatterplot smoothing”\nUm pequeno exemplo em shinyapps",
     "crumbs": [
       "Apresentação (MH)"
     ]
@@ -95,6 +95,46 @@
     "title": "IBE - dashboard",
     "section": "Solução adotada",
     "text": "Solução adotada\n\nCriação de gráficos multi-linha: utilização da library plotly e não de ggplotly\nCódigo com um desvio obsessivo: colocar “tudo” numa única função\nO problema dos gráficos com dados suavizados\nPublicação do dashboard: GitHub Actions (automatização do deployment) e GitHub Pages (publicação num servidor web estático)",
+    "crumbs": [
+      "Apresentação (MH)"
+    ]
+  },
+  {
+    "objectID": "IBE_Dashboard_MH.html#divagação-i---abreviaturas-das-designações-dos-indicadores-estatísticos",
+    "href": "IBE_Dashboard_MH.html#divagação-i---abreviaturas-das-designações-dos-indicadores-estatísticos",
+    "title": "IBE - dashboard",
+    "section": "Divagação I - Abreviaturas das designações dos indicadores estatísticos",
+    "text": "Divagação I - Abreviaturas das designações dos indicadores estatísticos\n\nA leitura das legendas dos gráficos é prejudicada pela extensão dos textos;\nComo abreviar, p. ex., a seguinte designação de um indicador estatístico:\n\n“Proporção da população desempregada inscrita num Centro de Emprego do IEFP que não recebe nenhum tipo de subsídio relacionado com o desemprego”\n\nUtilização de aplicações baseadas em LLM para gerar abreviaturas das designações dos indicadores estatísticos",
+    "crumbs": [
+      "Apresentação (MH)"
+    ]
+  },
+  {
+    "objectID": "IBE_Dashboard_MH.html#divagação-ii---claude-gerou-um-logotipo-para-o-dashboard",
+    "href": "IBE_Dashboard_MH.html#divagação-ii---claude-gerou-um-logotipo-para-o-dashboard",
+    "title": "IBE - dashboard",
+    "section": "Divagação II - Claude gerou um logotipo para o dashboard",
+    "text": "Divagação II - Claude gerou um logotipo para o dashboard\nThis logo design features:\n\nThe letters “IBE” in a bold, sans-serif font (Arial).\nEach letter is in a different color:\n\nI: Blue (#4A90E2)\nB: Teal (#50E3C2)\nE: Orange (#F5A623)\n\nAbove each letter is a small, semi-transparent circle in the corresponding color, adding a subtle decorative element.\n\nThe design is simple and clean, which makes it versatile for various uses in the Well-being Index publication. The colors chosen are vibrant and can be associated with different aspects of well-being: - Blue: Often associated with trust, stability, and calmness - Teal: Can represent balance, refreshment, and mental clarity - Orange: Often linked to enthusiasm, creativity, and vitality",
+    "crumbs": [
+      "Apresentação (MH)"
+    ]
+  },
+  {
+    "objectID": "IBE_Dashboard_MH.html#uma-necessidade-versão-bilingue",
+    "href": "IBE_Dashboard_MH.html#uma-necessidade-versão-bilingue",
+    "title": "IBE - dashboard",
+    "section": "Uma necessidade: versão bilingue",
+    "text": "Uma necessidade: versão bilingue\n\nUtilização de profiles (ver https://marioangst.com/en/blog/posts/multi-language-quarto/);\nUtilização da library babelquarto https://docs.ropensci.org/babelquarto/\nSolução implementada: !DRY",
+    "crumbs": [
+      "Apresentação (MH)"
+    ]
+  },
+  {
+    "objectID": "IBE_Dashboard_MH.html#solução-adotada-para-a-criação-do-dashboard-em-quarto",
+    "href": "IBE_Dashboard_MH.html#solução-adotada-para-a-criação-do-dashboard-em-quarto",
+    "title": "IBE - dashboard",
+    "section": "Solução adotada para a criação do dashboard em Quarto",
+    "text": "Solução adotada para a criação do dashboard em Quarto\n\nCriação de gráficos multi-linha: utilização da library plotly e não de ggplotly\nCódigo com um desvio obsessivo: colocar “tudo” numa única função\nO problema dos gráficos com dados suavizados\nPublicação do dashboard: GitHub Actions (automatização do deployment) e GitHub Pages (publicação num servidor web estático)",
     "crumbs": [
       "Apresentação (MH)"
     ]
