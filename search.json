@@ -84,7 +84,7 @@
     "href": "IBE_Dashboard_MH.html#fiasco-a-utilização-da-library-shiny",
     "title": "IBE - dashboard",
     "section": "Fiasco: a utilização da library shiny",
-    "text": "Fiasco: a utilização da library shiny\n\nSuavizar os gráficos (loess smoothing); LOESS = “locally weighted scatterplot smoothing”\nUm pequeno exemplo em shinyapps",
+    "text": "Fiasco: a utilização da library shiny\n\nSuavizar os gráficos (loess smoothing); LOESS = “locally weighted scatterplot smoothing”\nUm pequeno exemplo em shinyapps\ne um maior",
     "crumbs": [
       "Apresentação (MH)"
     ]
