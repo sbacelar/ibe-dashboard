@@ -319,8 +319,6 @@ value_box_color <- function(rate) {
   )
 }
 
-
-
 IBE_rate_color <- value_box_color(IBE_rate)
 CMV_rate_color <- value_box_color(CMV_rate)
 QV_rate_color <- value_box_color(QV_rate)

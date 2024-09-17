@@ -81,3 +81,4 @@ The design is simple and clean, which makes it versatile for various uses in the
 
 -   Suavizar os gráficos (*loess smoothing*); LOESS = "locally weighted scatterplot smoothing"
 -   Um pequeno exemplo em [shinyapps](https://sbac.shinyapps.io/ibe_smooth/)
+-   e um [maior](https://sbac.shinyapps.io/completo/)
