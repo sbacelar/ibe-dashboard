@@ -1,15 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "ibe-dashboard",
-    "section": "",
-    "text": "Este website foi criado com Quarto.\nPara saber mais sobre os websites Quarto, visitar https://quarto.org/docs/websites.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "Sobre",
@@ -97,6 +87,16 @@
     "text": "Fiasco: a utilização da library shiny\n\nSuavizar os gráficos (loess smoothing); LOESS = “locally weighted scatterplot smoothing”\nUm pequeno exemplo em shinyapps\ne um maior",
     "crumbs": [
       "Apresentação (MH)"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ibe-dashboard",
+    "section": "",
+    "text": "Este website foi criado com Quarto.\nPara saber mais sobre os websites Quarto, visitar https://quarto.org/docs/websites.",
+    "crumbs": [
+      "Home"
     ]
   }
 ]
